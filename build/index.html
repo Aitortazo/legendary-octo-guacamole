@@ -1,1507 +1,167 @@
-<!doctype html>
-<html lang="es">
-
-  <head>
-    
-      
-  <meta charset="utf-8">
-
-
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-
-
-  <title>Carrito</title>
-<script data-keepinline="true">
-/* datalayer */
-dataLayer = [];
-dataLayer.push({"pageCategory":"cart","ecommerce":{"currencyCode":"EUR","checkout":{"actionField":{"step":1}}},"event":"checkout"});
-/* call to GTM Tag */
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M4878HT');
-
-/* async call to avoid cache system for dynamic data */
-dataLayer.push({
-  'event': 'datalayer_ready'
-});
-</script>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-      
-                  <link rel="alternate" href="https://capitansiroco.com/carrito" hreflang="es">
-        
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-  <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1611253722">
-  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1611253722">
-
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187958448-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-187958448-1');
-    </script>
-
-
-
-  <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '785737308699981');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=785737308699981&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Facebook Pixel Code -->
-
-
-
-    <link rel="stylesheet" href="https://capitansiroco.com/themes/classic/assets/css/theme.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/modules/paypal/views/css/paypal_fo.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/modules/codfee/views/css/codfee_1.6.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/themes/capitansiroco/assets/css/custom.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/modules/ps_imageslider/css/homeslider.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/themes/capitansiroco/assets/css/owl.carousel.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/themes/capitansiroco/assets/css/owl.theme.default.min.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://capitansiroco.com/themes/capitansiroco/assets/css/custom.css" type="text/css" media="all">
-
-
-
-
+<!DOCTYPE html>
+  <html>
+    <section id="checkout-payment-step" class="checkout-step -current -reachable js-current-step -clickable">
+      <h1 class="step-title h3">
+        <i class="material-icons rtl-no-flip done"></i>
+        <span class="step-number">4</span>
+        Pago
+        <span class="step-edit text-muted"><i class="material-icons edit">mode_edit</i> Modificar</span>
+      </h1>
   
-
-
-  <script type="text/javascript">
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"0,00\u00a0\u20ac"},"total_including_tax":{"type":"total","label":"Total (impuestos incl.)","amount":0,"value":"0,00\u00a0\u20ac"},"total_excluding_tax":{"type":"total","label":"Total (impuestos excl.)","amount":0,"value":"0,00\u00a0\u20ac"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"0,00\u00a0\u20ac"},"discounts":null,"shipping":{"type":"shipping","label":"Transporte","amount":0,"value":"Gratis"},"tax":null},"products_count":0,"summary_string":"0 art\u00edculos","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"Espa\u00f1ol (Spanish)","iso_code":"es","locale":"es-ES","language_code":"es","is_rtl":"0","date_format_lite":"d\/m\/Y","date_format_full":"d\/m\/Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Carrito","description":"","keywords":"","robots":"index"},"page_name":"cart","body_classes":{"lang-es":true,"lang-rtl":false,"country-ES":true,"currency-EUR":true,"layout-full-width":true,"page-cart":true,"tax-display-enabled":true,"cart-empty":true},"admin_notifications":[]},"shop":{"name":"Capit\u00e1n Siroco","logo":"\/img\/capitan-siroco-logo-1611253599.jpg","stores_icon":"\/img\/logo_stores.png","favicon":"\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/capitansiroco.com\/","current_url":"https:\/\/capitansiroco.com\/carrito","shop_domain_url":"https:\/\/capitansiroco.com","img_ps_url":"https:\/\/capitansiroco.com\/img\/","img_cat_url":"https:\/\/capitansiroco.com\/img\/c\/","img_lang_url":"https:\/\/capitansiroco.com\/img\/l\/","img_prod_url":"https:\/\/capitansiroco.com\/img\/p\/","img_manu_url":"https:\/\/capitansiroco.com\/img\/m\/","img_sup_url":"https:\/\/capitansiroco.com\/img\/su\/","img_ship_url":"https:\/\/capitansiroco.com\/img\/s\/","img_store_url":"https:\/\/capitansiroco.com\/img\/st\/","img_col_url":"https:\/\/capitansiroco.com\/img\/co\/","img_url":"https:\/\/capitansiroco.com\/themes\/capitansiroco\/assets\/img\/","css_url":"https:\/\/capitansiroco.com\/themes\/capitansiroco\/assets\/css\/","js_url":"https:\/\/capitansiroco.com\/themes\/capitansiroco\/assets\/js\/","pic_url":"https:\/\/capitansiroco.com\/upload\/","pages":{"address":"https:\/\/capitansiroco.com\/direccion","addresses":"https:\/\/capitansiroco.com\/direcciones","authentication":"https:\/\/capitansiroco.com\/iniciar-sesion","cart":"https:\/\/capitansiroco.com\/carrito","category":"https:\/\/capitansiroco.com\/index.php?controller=category","cms":"https:\/\/capitansiroco.com\/index.php?controller=cms","contact":"https:\/\/capitansiroco.com\/contactenos","discount":"https:\/\/capitansiroco.com\/descuento","guest_tracking":"https:\/\/capitansiroco.com\/seguimiento-pedido-invitado","history":"https:\/\/capitansiroco.com\/historial-compra","identity":"https:\/\/capitansiroco.com\/datos-personales","index":"https:\/\/capitansiroco.com\/","my_account":"https:\/\/capitansiroco.com\/mi-cuenta","order_confirmation":"https:\/\/capitansiroco.com\/confirmacion-pedido","order_detail":"https:\/\/capitansiroco.com\/index.php?controller=order-detail","order_follow":"https:\/\/capitansiroco.com\/seguimiento-pedido","order":"https:\/\/capitansiroco.com\/pedido","order_return":"https:\/\/capitansiroco.com\/index.php?controller=order-return","order_slip":"https:\/\/capitansiroco.com\/devoluciones","pagenotfound":"https:\/\/capitansiroco.com\/pagina-no-encontrada","password":"https:\/\/capitansiroco.com\/recuperar-contrase\u00f1a","pdf_invoice":"https:\/\/capitansiroco.com\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/capitansiroco.com\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/capitansiroco.com\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/capitansiroco.com\/rebajas","product":"https:\/\/capitansiroco.com\/index.php?controller=product","search":"https:\/\/capitansiroco.com\/busqueda","sitemap":"https:\/\/capitansiroco.com\/mapa del sitio","stores":"https:\/\/capitansiroco.com\/tiendas","supplier":"https:\/\/capitansiroco.com\/proveedor","register":"https:\/\/capitansiroco.com\/iniciar-sesion?create_account=1","order_login":"https:\/\/capitansiroco.com\/pedido?login=1"},"alternative_langs":{"es":"https:\/\/capitansiroco.com\/carrito"},"theme_assets":"\/themes\/capitansiroco\/assets\/","actions":{"logout":"https:\/\/capitansiroco.com\/?mylogout="},"no_picture_image":{"bySize":{"small_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-small_default.jpg","width":98,"height":98},"cart_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-cart_default.jpg","width":125,"height":125},"home_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-home_default.jpg","width":250,"height":250},"medium_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-medium_default.jpg","width":452,"height":452},"large_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-large_default.jpg","width":800,"height":800},"thickbox_default":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-thickbox_default.jpg","width":1100,"height":1500}},"small":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-small_default.jpg","width":98,"height":98},"medium":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-medium_default.jpg","width":452,"height":452},"large":{"url":"https:\/\/capitansiroco.com\/img\/p\/es-default-thickbox_default.jpg","width":1100,"height":1500},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"price","label":"Precio"},"voucher_enabled":1,"return_enabled":1},"field_required":[],"breadcrumb":{"links":[{"title":"Inicio","url":"https:\/\/capitansiroco.com\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1637062986,"static_token":"cd8048f89523dd01e9168435b2857c0f","token":"a84cf52091752891adeafdd508b991a3"};
-        var psemailsubscription_subscription = "https:\/\/capitansiroco.com\/module\/ps_emailsubscription\/subscription";
-      </script>
-
-
-
-  
-
-
-
-
-    
-  </head>
-
-  <body id="cart" class="lang-es country-es currency-eur layout-full-width page-cart tax-display-enabled cart-empty">
-
-    
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4878HT&nojscript=true"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-
-    <main>
-      
-              
-
-      <header id="header">
+      <div class="content">
         
-          
-
-  <div class="header-banner">
-    <!-- Block search module TOP -->
-<div id="search_widget" class="search-widget" data-search-controller-url="//capitansiroco.com/busqueda">
-  <div class="row">
-    <div class="col-xs-10 col-sm-10 col-md-11">
-    	<form method="get" action="//capitansiroco.com/busqueda">
-    		<input type="hidden" name="controller" value="search">
-    		<input type="text" class="input-buscar" name="s" value="" placeholder="Búsqueda en catálogo" aria-label="Buscar">
-    		<button type="submit">
-    			<i class="material-icons search"></i>
-          <span class="hidden-xl-down">Buscar</span>
-    		</button>
-    	</form>
-    </div>
-    <div class="col-xs-2 col-sm-2 col-md-1">
-      <i class="material-icons clear">clear</i>
-    </div>
-  </div>
-</div>
-<!-- /Block search module TOP -->
-<div class="row banner-header">
-  <div class="col col-12 text-center">
-    Regístrate y Consigue un 10% de descuento <a href="https://capitansiroco.com/mi-cuenta" rel="nofollow">¡Haz Click!</a>
-  </div>
-</div>
-
-  </div>
-
-
-
-<nav class="header-nav">
-  <div class="container">
-    <div class="hidden-md-up text-sm-center mobile">
-      <div class="row">
-        <div class="col col-xs-2 col-sm-2 col-sm-2" id="menu-icon">
-          <i class="material-icons d-inline"></i>
-        </div>
-
-        <div class="col col-xs-6 col-sm-6 col-sm-6 top-logo" id="_mobile_logo"></div>
-
-        <div class="col col-xs-4 col-sm-4 col-sm-4 iconos"><div id="_desktop_user_info">
-  <div class="user-info">
-          <a
-        href="https://capitansiroco.com/mi-cuenta"
-        title="Acceda a su cuenta de cliente"
-        rel="nofollow"
-      >
-        <i class="material-icons"></i>
-        <span class="hidden-sm-down">Iniciar sesión</span>
-      </a>
-      </div>
-</div>
-<div id="_desktop_cart">
-  <div class="blockcart cart-preview inactive" data-refresh-url="//capitansiroco.com/module/ps_shoppingcart/ajax">
-    <div class="header">
-              <span class="cart-products-count">0</span>
-        <i class="material-icons shopping-cart">shopping_cart</i>
-        <span class="hidden-sm-down">Carrito</span>
+  
+    
+  
+      <div style="display:none" class="js-cart-payment-step-refresh"></div>
+  
+    
+      <div class="payment-options ">
+                    <div>
+            <div id="payment-option-1-container" class="payment-option clearfix">
+                          <span class="custom-radio float-xs-left">
+                <input class="ps-shown-by-js " id="payment-option-1" data-module-name="" name="payment-option" type="radio" required="">
+                <span></span>
+              </span>
+                          <form method="GET" class="ps-hidden-by-js" style="display: none;">
+                                <button class="ps-hidden-by-js" type="submit" name="select_payment_option" value="payment-option-1" style="display: none;">
+                    Elegir
+                  </button>
+                            </form>
+  
+              <label for="payment-option-1">
+                <span>Pago con Tarjeta</span>
+                            </label>
+  
+            </div>
           </div>
-  </div>
-</div>
-<i id="bt_buscar" class="bt-buscar material-icons search">search</i>
-</div>
-
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
-
-  <div class="header-top">
-    <div class="container">
-       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 hidden-sm-down" id="_desktop_logo">
-                          <a href="https://capitansiroco.com/">
-                <img class="logo img-responsive" src="/img/capitan-siroco-logo-1611253599.jpg" alt="Capitán Siroco">
-              </a>
+  
+          
+          <div id="pay-with-payment-option-1-form" class="js-payment-option-form  ps-hidden " style="display: none;">
+                        <form id="payment-form" method="POST" action="https://sis.redsys.es/sis/realizarPago/utf-8">
+                                <input type="hidden" name="Ds_SignatureVersion" value="HMAC_SHA256_V1">
+                                <input type="hidden" name="Ds_MerchantParameters" value="eyJEU19NRVJDSEFOVF9BTU9VTlQiOjE2OTAwLCJEU19NRVJDSEFOVF9PUkRFUiI6IjAwMDY3Mzl6NjUyOSIsIkRTX01FUkNIQU5UX01FUkNIQU5UQ09ERSI6IjA4ODUwMTA0NCIsIkRTX01FUkNIQU5UX0NVUlJFTkNZIjoiOTc4IiwiRFNfTUVSQ0hBTlRfVFJBTlNBQ1RJT05UWVBFIjoiMCIsIkRTX01FUkNIQU5UX1RFUk1JTkFMIjoiMiIsIkRTX01FUkNIQU5UX01FUkNIQU5UVVJMIjoiaHR0cHM6XC9cL2NhcGl0YW5zaXJvY28uY29tXC9pbmRleC5waHA/ZmM9bW9kdWxlJm1vZHVsZT1yZWRzeXNvZmljaWFsJmNvbnRyb2xsZXI9dmFsaWRhdGlvbiIsIkRTX01FUkNIQU5UX1VSTE9LIjoiaHR0cHM6XC9cL2NhcGl0YW5zaXJvY28uY29tXC9pbmRleC5waHA/Y29udHJvbGxlcj1vcmRlci1jb25maXJtYXRpb24maWRfY2FydD02NzM5JmlkX21vZHVsZT03MSZpZF9vcmRlcj0ma2V5PWYyMTI0MGExYjAxM2M0YzgxMGVlYjRiYmNjZDNhMjQ2IiwiRFNfTUVSQ0hBTlRfVVJMS08iOiJodHRwczpcL1wvY2FwaXRhbnNpcm9jby5jb21cL2luZGV4LnBocD9mYz1tb2R1bGUmbW9kdWxlPXJlZHN5c29maWNpYWwmY29udHJvbGxlcj12YWxpZGF0aW9uIiwiRHNfTWVyY2hhbnRfQ29uc3VtZXJMYW5ndWFnZSI6IjAiLCJEc19NZXJjaGFudF9Qcm9kdWN0RGVzY3JpcHRpb24iOiIxIENhbmd1cm8gQ2FyaGFydHQgV0lQIFByZW50aXMgVmVyZGUgZGUgRm9ycm8gUG9sLi4uICIsIkRzX01lcmNoYW50X1RpdHVsYXIiOiJBaXRvciBUYXp6byIsIkRzX01lcmNoYW50X01lcmNoYW50RGF0YSI6IjA0MTI5NTc2NGYxYTllNGMzY2FkOTdmMGJlNzFmNTA2ZTFlODBiMTkiLCJEc19NZXJjaGFudF9NZXJjaGFudE5hbWUiOiJTaXJvY28iLCJEc19NZXJjaGFudF9QYXlNZXRob2RzIjoiQyIsIkRzX01lcmNoYW50X01vZHVsZSI6InByZXN0YXNob3BfcmVkc3lzXzMuMC40In0=">
+                                <input type="hidden" name="Ds_Signature" value="xOjLpoMVSwqKdkDduLV/3u/scs68+XV0JDQbYpKqKyw=">
+                              <button style="display:none" id="pay-with-payment-option-1" type="submit"></button>
+              </form>
                     </div>
-        <div class="col-md-10 col-sm-12 position-static hidden-sm-down">
-          <div class="bd-vertical-align-wrapper">
-            <div class="col-md-10 menu-desktop">
-
-<div class="menu js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
-    
-          <ul class="top-menu" id="top-menu" data-depth="0">
-                    <li class="category" id="category-6">
-                          <a
-                class="dropdown-item"
-                href="https://capitansiroco.com/moda-hombre/" data-depth="0"
-                              >
-                                Hombre
-              </a>
-                          </li>
-                    <li class="category" id="category-7">
-                          <a
-                class="dropdown-item"
-                href="https://capitansiroco.com/moda-mujer/" data-depth="0"
-                              >
-                                Mujer
-              </a>
-                          </li>
-                    <li class="link" id="lnk-marcas">
-                          <a
-                class="dropdown-item"
-                href="https://capitansiroco.com/marcas" data-depth="0"
-                              >
-                                MARCAS
-              </a>
-                          </li>
-                    <li class="link" id="lnk-novedades">
-                          <a
-                class="dropdown-item"
-                href="https://capitansiroco.com/novedades" data-depth="0"
-                              >
-                                Novedades
-              </a>
-                          </li>
-                    <li class="link" id="lnk-rebajas">
-                          <a
-                class="dropdown-item"
-                href="https://capitansiroco.com/rebajas" data-depth="0"
-                              >
-                                REBAJAS
-              </a>
-                          </li>
-              </ul>
-    
-    <div class="clearfix"></div>
-</div>
-</div>
-            <div class="col-md-2 hidden-md-down iconos"><div id="_desktop_user_info">
-  <div class="user-info">
-          <a
-        href="https://capitansiroco.com/mi-cuenta"
-        title="Acceda a su cuenta de cliente"
-        rel="nofollow"
-      >
-        <i class="material-icons"></i>
-        <span class="hidden-sm-down">Iniciar sesión</span>
-      </a>
-      </div>
-</div>
-<div id="_desktop_cart">
-  <div class="blockcart cart-preview inactive" data-refresh-url="//capitansiroco.com/module/ps_shoppingcart/ajax">
-    <div class="header">
-              <span class="cart-products-count">0</span>
-        <i class="material-icons shopping-cart">shopping_cart</i>
-        <span class="hidden-sm-down">Carrito</span>
-          </div>
-  </div>
-</div>
-<i id="bt_buscar" class="bt-buscar material-icons search">search</i>
-</div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
+                          <div>
+            <div id="payment-option-2-container" class="payment-option clearfix">
+                          <span class="custom-radio float-xs-left">
+                <input class="ps-shown-by-js " id="payment-option-2" data-module-name="paypal" name="payment-option" type="radio" required="">
+                <span></span>
+              </span>
+                          <form method="GET" class="ps-hidden-by-js" style="display: none;">
+                                <button class="ps-hidden-by-js" type="submit" name="select_payment_option" value="payment-option-2" style="display: none;">
+                    Elegir
+                  </button>
+                            </form>
   
-
-        
-      </header>
-
-      
-        
-<aside id="notifications">
-  <div class="container">
-    
-    
-    
-      </div>
-</aside>
-      
-
-      <section id="wrapper">
-        
-        <div class="container">
-
+              <label for="payment-option-2">
+                <span>Pagar con PayPal</span>
+                                <img src="/modules/paypal/views/img/paypal_logo.png">
+                            </label>
+  
+            </div>
+          </div>
+  
           
-
+          <div id="pay-with-payment-option-2-form" class="js-payment-option-form  ps-hidden " style="display: none;">
+                        <form id="payment-form" method="POST" action="javascript:ECInContext()">
+                              <button style="display:none" id="pay-with-payment-option-2" type="submit"></button>
+              </form>
+                    </div>
+                          <div>
+            <div id="payment-option-3-container" class="payment-option clearfix">
+                          <span class="custom-radio float-xs-left">
+                <input class="ps-shown-by-js " id="payment-option-3" data-module-name="codfee" name="payment-option" type="radio" required="">
+                <span></span>
+              </span>
+                          <form method="GET" class="ps-hidden-by-js" style="display: none;">
+                                <button class="ps-hidden-by-js" type="submit" name="select_payment_option" value="payment-option-3" style="display: none;">
+                    Elegir
+                  </button>
+                            </form>
+  
+              <label for="payment-option-3">
+                <span>Pago contra reembolso: (+4,00&nbsp;€)</span>
+                            </label>
+  
+            </div>
+          </div>
+  
           
-  <div id="content-wrapper">
-    
-          <nav data-depth="2" class="breadcrumb small text-uppercase">
-    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-      
-                  
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                              <a itemprop="item" href="https://capitansiroco.com/">
-                  <span itemprop="name">Inicio</span>
-                </a>
-                            <meta itemprop="position" content="1">
+          <div id="pay-with-payment-option-3-form" class="js-payment-option-form  ps-hidden " style="display: none;">
+                        <form id="payment-form" method="POST" action="https://capitansiroco.com/module/codfee/payment?c=1">
+                                <input type="hidden" name="codfee_id" value="1">
+                                <input type="hidden" name="codfee_base_1" value="169,00&nbsp;€">
+                                <input type="hidden" name="codfee_order_total_with_taxes_1" value="169,00&nbsp;€">
+                                <input type="hidden" name="codfee_fee_with_taxes_1" value="4,00&nbsp;€">
+                                <input type="hidden" name="codfee_fee_1" value="4,00&nbsp;€">
+                                <input type="hidden" name="codfee_total_1" value="173,00&nbsp;€">
+                                <input type="hidden" name="codfee_total_with_taxes_1" value="173,00&nbsp;€">
+                                <input type="hidden" name="codfee_total_without_taxes_1" value="143,67&nbsp;€">
+                                <input type="hidden" name="codfee_taxes_1" value="29,33&nbsp;€">
+                                <input type="hidden" name="codfee_fee_wt_1" value="4,00&nbsp;€">
+                                <input type="hidden" name="codfee_price_display_method_1" value="1">
+                                <input type="hidden" name="codfee_price_display_method_cartsummary_1" value="1">
+                                <input type="hidden" name="codfee_text_1" value="Comisión por pago contra reembolso">
+                                <input type="hidden" name="codfee_tax_enabled_1" value="1">
+                                <input type="hidden" name="codfee_tax_display_1" value="0">
+                                <input type="hidden" name="codfee_type_1" value="0">
+                                <input type="hidden" name="codfee_free_flag_1" value="0">
+                                <input type="hidden" name="codfee_free_txt_1" value="Gratis">
+                              <button style="display:none" id="pay-with-payment-option-3" type="submit"></button>
+              </form>
+                    </div>
+              </div>
+  
+        <p class="ps-hidden-by-js" style="display: none;">
+              Al confirmar el pedido, certifica que ha leído y acepta en su totalidad las siguientes condiciones:
+      </p>
+  
+      <form id="conditions-to-approve" method="GET">
+        <ul>
+                    <li>
+              <div class="float-xs-left">
+                <span class="custom-checkbox">
+                  <input id="conditions_to_approve[terms-and-conditions]" name="conditions_to_approve[terms-and-conditions]" required="" type="checkbox" value="1" class="ps-shown-by-js">
+                  <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
+                </span>
+              </div>
+              <div class="condition-label">
+                <label class="js-terms" for="conditions_to_approve[terms-and-conditions]">
+                  Estoy de acuerdo con los <a href="https://capitansiroco.com/terminos-y-condiciones-de-uso" id="cta-terms-and-conditions-0">términos del servicio</a> y los acepto sin reservas.
+                </label>
+              </div>
             </li>
-          
-        
-                          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <strong itemprop="name">Carrito</strong>
-            <meta itemprop="position" content="1">
-          </li>
-              
-    </ol>
-  </nav>
-    
-    
-    
-
-  <section id="main">
-    <div class="cart-grid row">
-
-      <!-- Left Block: cart product informations & shpping -->
-      <div class="cart-grid-body col-xs-12 col-lg-8">
-
-        <!-- cart products detailed -->
-        <div class="card cart-container">
-          <div class="card-block">
-            <h1 class="h1">Carrito</h1>
-          </div>
-          <hr class="separator">
-          
-            
-  <div class="cart-overview js-cart" data-refresh-url="//capitansiroco.com/carrito?ajax=1&action=refresh">
-          <span class="no-items">No hay más artículos en su carrito</span>
-      </div>
-
-          
-        </div>
-
-        
-  <a class="label" href="https://capitansiroco.com/">
-    <i class="material-icons">chevron_left</i>Ver carrito
-  </a>
-
-
-        <!-- shipping informations -->
-        
-          
-        
-      </div>
-
-      <!-- Right Block: cart subtotal & cart total -->
-      <div class="cart-grid-right col-xs-12 col-lg-4">
-
-        
-          <div class="card cart-summary">
-
-            
-              
-            
-
-            
-              
-<div class="cart-detailed-totals">
-
-  <div class="card-block">
-                  <div class="cart-summary-line" id="cart-subtotal-products">
-          <span class="label js-subtotal">
-                          0 artículos
-                      </span>
-          <span class="value">
-            0,00 €
-          </span>
-                  </div>
-                                  <div class="cart-summary-line" id="cart-subtotal-shipping">
-          <span class="label">
-                          Transporte
-                      </span>
-          <span class="value">
-            Gratis
-          </span>
-                        <div><small class="value"></small></div>
-                  </div>
-                      </div>
-
-
-        <div class="envio_gratis">Añade 49,99€ a tu pedido para disfrutar de envío gratuito.</div>
-  
-  
-    <div class="card-block cart-summary-totals">
-
-  
-          <div class="cart-summary-line cart-total">
-        <span class="label">Total (impuestos inc.)</span>
-        <span class="value">0,00 €</span>
-      </div>
-      
-
-  
-      
-
-</div>
-  
-
-  
-</div>
-
-            
-
-            
-  <div class="checkout text-sm-center card-block">
-    <button type="button" class="btn btn-primary disabled" disabled>Tramitar Pedido</button>
-  </div>
-
-
-          </div>
-        
-
-        
-          
-        
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="featured-products clearfix">
-  <h2 class="h2 products-section-title text-uppercase">
-    Productos Destacados
-  </h2>
-  <div class="products">
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="22" data-id-product-attribute="340" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/logo-pecho--pintura-blanco" data-href="https://capitansiroco.com/logo-pecho--pintura-blanco" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/11360-medium_default/logo-pecho--pintura-blanco.jpg" alt="Camiseta Stone Island Blanca Graphic Seven Hombre 71152NS86" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/logo-pecho--pintura-blanco" >
-                            <div class="h3" itemprop="name">Camiseta Stone Island Blanca Graphic Seven Hombre </div>
-              <div class="reference">71152NS86</div>
-              <div class="manufacturer">Stone Island</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">149,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">90,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="22" >
-                <input type="hidden" name="id_product_attribute" value="343" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla S"
-                >
-                  S
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="22" >
-                <input type="hidden" name="id_product_attribute" value="346" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla XL"
-                >
-                  XL
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="225" data-id-product-attribute="2680" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/basica-capucha-marron" data-href="https://capitansiroco.com/basica-capucha-marron" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/907-medium_default/basica-capucha-marron.jpg" alt="Abrigo Blauer Acolchado con Capucha Rosa Mujer 30105050" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/basica-capucha-marron" >
-                            <div class="h3" itemprop="name">Abrigo Blauer Acolchado con Capucha Rosa Mujer </div>
-              <div class="reference">30105050</div>
-              <div class="manufacturer">Blauer</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">270,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">162,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="225" >
-                <input type="hidden" name="id_product_attribute" value="2683" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla S"
-                >
-                  S
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="225" >
-                <input type="hidden" name="id_product_attribute" value="2684" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla M"
-                >
-                  M
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="225" >
-                <input type="hidden" name="id_product_attribute" value="2685" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla L"
-                >
-                  L
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="240" data-id-product-attribute="2830" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/neoprene-corta-azul-marino" data-href="https://capitansiroco.com/neoprene-corta-azul-marino" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/994-medium_default/neoprene-corta-azul-marino.jpg" alt="Chaqueta Blauer Neoprene Corta con Capucha Azul Marino Hombre 23635553" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/neoprene-corta-azul-marino" >
-                            <div class="h3" itemprop="name">Chaqueta Blauer Neoprene Corta con Capucha Azul Marino Hombre </div>
-              <div class="reference">23635553</div>
-              <div class="manufacturer">Blauer</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">357,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">215,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="240" >
-                <input type="hidden" name="id_product_attribute" value="2836" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla XL"
-                >
-                  XL
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="321" data-id-product-attribute="3750" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/rugby-po-unlined-multicolor" data-href="https://capitansiroco.com/rugby-po-unlined-multicolor" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/11355-medium_default/rugby-po-unlined-multicolor.jpg" alt="Chaqueta Polo Ralph Lauren Rugby Multicolor 710760396" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/rugby-po-unlined-multicolor" >
-                            <div class="h3" itemprop="name">Chaqueta Polo Ralph Lauren Rugby Multicolor </div>
-              <div class="reference">710-760396</div>
-              <div class="manufacturer">Polo Ralph Lauren Sport</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">299,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">180,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="321" >
-                <input type="hidden" name="id_product_attribute" value="3756" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla XL"
-                >
-                  XL
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="467" data-id-product-attribute="5840" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue" data-href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/7163-medium_default/womens-nike-air-force-1-07-s-white-blue.jpg" alt="Nike Air Force 1 ´07 Blanca y Rosa Mujer" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue" >
-                            <div class="h3" itemprop="name">Nike Air Force 1 ´07 Blanca y Rosa </div>
-              <div class="reference">AA0287-107</div>
-              <div class="manufacturer">Nike</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">110,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">66,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="467" >
-                <input type="hidden" name="id_product_attribute" value="5844" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 36"
-                >
-                  36
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="500" data-id-product-attribute="6500" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/nike-m2k-tekno-light-blue" data-href="https://capitansiroco.com/nike-m2k-tekno-light-blue" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/5917-medium_default/nike-m2k-tekno-light-blue.jpg" alt="Nike M2k Tekno Light Blue" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/nike-m2k-tekno-light-blue" >
-                            <div class="h3" itemprop="name">Nike M2k Tekno Light </div>
-              <div class="reference">AV4789</div>
-              <div class="manufacturer">Nike</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">100,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="500" >
-                <input type="hidden" name="id_product_attribute" value="6511" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 42.5"
-                >
-                  42.5
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="468" data-id-product-attribute="5860" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue-1" data-href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue-1" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/8614-medium_default/womens-nike-air-force-1-07-s-white-blue-1.jpg" alt="Nike Air Force 1 ´07 Blanca Mujer AA0287-101" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/womens-nike-air-force-1-07-s-white-blue-1" >
-                            <div class="h3" itemprop="name">Nike Air Force 1 ´07 Blanca Mujer </div>
-              <div class="reference">AA0287-101</div>
-              <div class="manufacturer">Nike</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">100,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="468" >
-                <input type="hidden" name="id_product_attribute" value="5864" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 36"
-                >
-                  36
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="468" >
-                <input type="hidden" name="id_product_attribute" value="5867" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 37.5"
-                >
-                  37.5
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="468" >
-                <input type="hidden" name="id_product_attribute" value="5868" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 38"
-                >
-                  38
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="468" >
-                <input type="hidden" name="id_product_attribute" value="5871" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 40"
-                >
-                  40
-                </button>
-              </form>
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="468" >
-                <input type="hidden" name="id_product_attribute" value="5872" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 40.5"
-                >
-                  40.5
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-          
-
-
-  <article class="product-miniature js-product-miniature col-xs-12 col-sm-6 col-md-3" data-id-product="570" data-id-product-attribute="7580" itemscope itemtype="http://schema.org/Product">
-    <div class="inner">
-      
-                          <a class="enlace-imagen" href="https://capitansiroco.com/nike-react-sertu-grey" data-href="https://capitansiroco.com/nike-react-sertu-grey" class="thumbnail product-thumbnail">
-            <div class="imagenes no-carrusel">
-              <img loading="lazy" src="https://capitansiroco.com/2886-medium_default/nike-react-sertu-grey.jpg" alt="Nike React Sertu Grey" />
-            </div>
-          </a>
-              
-
-      <div class="nombre">
-        
-            <a class="product-title" href="https://capitansiroco.com/nike-react-sertu-grey" >
-                            <div class="h3" itemprop="name">Nike React Sertu </div>
-              <div class="reference">AT5301-004</div>
-              <div class="manufacturer">Nike</div>
-            </a>
-          
-      </div>
-
-      <div class="precio">
-        
-                      <div class="product-price-and-shipping">
-                              
-                <span class="sr-only">Precio base</span>
-                <span class="regular-price">150,00 €</span>
-              
-              
-
-              <span class="sr-only">Precio</span>
-              <span itemprop="price" class="price">135,00 €</span>
-
-              
-
-              
-            </div>
-                  
-
-                  <div class="tallas hidden-sm-down">
-                          <form id="add-to-cart-or-refresh" class="talla" action="https://capitansiroco.com/carrito" method="post">
-                <input type="hidden" name="token" value="cd8048f89523dd01e9168435b2857c0f">
-                <input type="hidden" name="id_product" value="570" >
-                <input type="hidden" name="id_product_attribute" value="7594" >
-                <input type="hidden" class="input-group form-control" name="qty" min="1" value="1">
-                <button
-                  class="btn btn-primary add-to-cart out-of-stock"
-                  data-button-action="add-to-cart"
-                  title="Añadir al carrito talla 44.5"
-                >
-                  44.5
-                </button>
-              </form>
-                      </div>
-        
-      </div>
-    </div>
-  </article>
-
-      </div>
-  <a class="all-product-link float-xs-left float-md-right h4" href="https://capitansiroco.com/inicio/">
-    Todos los productos<i class="material-icons"></i>
-  </a>
-</section>
-
-
-    
-  </div>
-
-
-          
-        </div>
-        
-      </section>
-
-      <footer id="footer">
-        
-          <div class="container">
-  <div class="row">
-    
-      <div class="row beneficios">
-  <div class="col-xs-4 col-sm-4 col-md-4 beneficio">
-    <img loading="lazy" src="https://capitansiroco.com/themes/capitansiroco/assets/img/envio-48-72h.png" alt="icono de tiempo"/>
-    <div>En 24/48h en tu casa</div>
-    <p>Envíos en península y Portugal</p>
-  </div>
-  <div class="col-xs-4 col-sm-4 col-md-4 beneficio">
-    <img loading="lazy" src="https://capitansiroco.com/themes/capitansiroco/assets/img/envio-gratis.png" alt="icono de envío gratis"/>
-    <div>Gastos de envío gratis</div>
-    <p>En compras superiores a 49,99€</p>
-  </div>
-  <div class="col-xs-4 col-sm-4 col-md-4 beneficio">
-    <img loading="lazy" src="https://capitansiroco.com/themes/capitansiroco/assets/img/pago-seguro.png" alt="icono de pago seguro"/>
-    <div>Pago 100% seguro</div>
-    <p>Ciframos tus datos de extremo a extremo</p>
-  </div>
-</div>
-
-    
-  </div>
-</div>
-<div class="footer-container">
-  <div class="container">
-    <div class="row">
-      
-        <div class="col-md-4 links">
-  <div class="row">
-      <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">Productos</p>
-            <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_17568" data-toggle="collapse">
-        <span class="h3">Productos</span>
-        <span class="float-xs-right">
-          <span class="navbar-toggler collapse-icons">
-            <i class="material-icons add"></i>
-            <i class="material-icons remove"></i>
-          </span>
-        </span>
-      </div>
-      <ul id="footer_sub_menu_17568" class="collapse">
-                  <li>
-            <a
-                id="link-product-page-prices-drop-1"
-                class="cms-page-link"
-                href="https://capitansiroco.com/rebajas"
-                title="Encuentra las mejores rebajas en【Capitan Sirocco】✈️ Envío Express Gratis ✔️ Pago seguro ✅  14 Días Devolución"
-                				            >
-              Comprar Rebajas
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-product-page-new-products-1"
-                class="cms-page-link"
-                href="https://capitansiroco.com/novedades"
-                title="Descubre todas las Novedades en Zapatillas y Ropa Premium en Capitán Siroco. Tenemos las Últimas tendencias en Moda y los últimos modelos de Zapatillas Exclusivas. Entra en nuestra Tienda Online y Descúbrelos."
-                				            >
-              Novedades
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-product-page-best-sales-1"
-                class="cms-page-link"
-                href="https://capitansiroco.com/mas-vendidos"
-                title="Descubre los productos más vendidos en Sneakers, Streetwear y Ropa de Lujo en nuestra Tienda Online. ¡Entra y Compra al mejor precio!"
-                				            >
-              Los más vendidos
-            </a>
-          </li>
-              </ul>
-    </div>
-      <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">Nuestra empresa</p>
-            <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_54198" data-toggle="collapse">
-        <span class="h3">Nuestra empresa</span>
-        <span class="float-xs-right">
-          <span class="navbar-toggler collapse-icons">
-            <i class="material-icons add"></i>
-            <i class="material-icons remove"></i>
-          </span>
-        </span>
-      </div>
-      <ul id="footer_sub_menu_54198" class="collapse">
-                  <li>
-            <a
-                id="link-cms-page-1-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/envios-y-devoluciones"
-                title="Nuestros términos y condiciones de envío y devoluciones | Capitán Siroco"
-                				 rel="nofollow"             >
-              Envíos y devoluciones
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-cms-page-2-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/aviso-legal"
-                title="Nuestro Aviso Legal | Capitán Siroco"
-                				 rel="nofollow"             >
-              Aviso legal
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-cms-page-3-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/terminos-y-condiciones-de-uso"
-                title="Nuestros términos y condiciones | Capitán Siroco"
-                				 rel="nofollow"             >
-              Términos y condiciones
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-cms-page-5-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/politica-de-privacidad"
-                title="Nuestra Política de Privacidad | Capitán Siroco"
-                				 rel="nofollow"             >
-              Política de privacidad
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-cms-page-6-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/politica-de-cookies"
-                title="Nuestra Política de Cookies | Capitán Siroco"
-                				 rel="nofollow"             >
-              Política de Cookies
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-static-page-contact-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/contactenos"
-                title="Contáctenos"
-                				 rel="nofollow"             >
-              Contacte con nosotros
-            </a>
-          </li>
-                  <li>
-            <a
-                id="link-static-page-stores-2"
-                class="cms-page-link"
-                href="https://capitansiroco.com/tiendas"
-                title=""
-                				 rel="nofollow"             >
-              Nuestras tiendas
-            </a>
-          </li>
-              </ul>
-    </div>
-    </div>
-</div>
-<div id="block_myaccount_infos" class="col-md-2 links wrapper">
-  <p class="h3 myaccount-title hidden-sm-down">
-    <a class="text-uppercase h3" href="https://capitansiroco.com/mi-cuenta" rel="nofollow">
-      Tu cuenta
-    </a>
-  </p>
-  <div class="title clearfix hidden-md-up" data-target="#footer_account_list" data-toggle="collapse">
-    <span class="h3">Tu cuenta</span>
-    <span class="float-xs-right">
-      <span class="navbar-toggler collapse-icons">
-        <i class="material-icons add"></i>
-        <i class="material-icons remove"></i>
-      </span>
-    </span>
-  </div>
-  <ul class="account-list collapse" id="footer_account_list">
-            <li>
-          <a href="https://capitansiroco.com/datos-personales" title="Información personal" rel="nofollow">
-            Información personal
-          </a>
-        </li>
-            <li>
-          <a href="https://capitansiroco.com/seguimiento-pedido" title="Devoluciones de mercancía" rel="nofollow">
-            Devoluciones de mercancía
-          </a>
-        </li>
-            <li>
-          <a href="https://capitansiroco.com/historial-compra" title="Pedidos" rel="nofollow">
-            Pedidos
-          </a>
-        </li>
-            <li>
-          <a href="https://capitansiroco.com/devoluciones" title="Devoluciones" rel="nofollow">
-            Devoluciones
-          </a>
-        </li>
-            <li>
-          <a href="https://capitansiroco.com/direcciones" title="Direcciones" rel="nofollow">
-            Direcciones
-          </a>
-        </li>
-            <li>
-          <a href="https://capitansiroco.com/descuento" title="Cupones de descuento" rel="nofollow">
-            Cupones de descuento
-          </a>
-        </li>
-        
-	</ul>
-</div>
-
-<div class="block-contact col-md-2 links wrapper">
-  <div class="hidden-sm-down">
-    <p class="h3 text-uppercase block-contact-title">Información de la tienda</p>
-      C/ Capitán Cortés, 1 Bajo<br />24001 León<br />León<br />España
-              <br>
-                Llámenos: <span>987 208 567</span>
-                          <br>
-                Envíenos un correo electrónico: <a href="mailto:siroco@siroco.online" class="dropdown">siroco@siroco.online</a>
-        </div>
-  <div class="hidden-md-up">
-    <div class="title">
-      <a class="h3" href="https://capitansiroco.com/tiendas">Información de la tienda</a>
-    </div>
-  </div>
-</div>
-<div class="block_newsletter col-xs-12 col-sm-12 col-md-3">
-  <div class="row">
-    <div class="col-md-12 col-xs-12">
-      <form action="https://capitansiroco.com/#footer" method="post">
-        <div class="row">
-          <div class="col-xs-12 formulario">
-            <input
-              class="btn btn-primary float-xs-right hidden-xs-down"
-              name="submitNewsletter"
-              type="submit"
-              value="Suscribirse"
-            >
-            <input
-              class="btn btn-primary float-xs-right hidden-sm-up"
-              name="submitNewsletter"
-              type="submit"
-              value="OK"
-            >
-            <div class="input-wrapper">
-              <input
-                class="email-input"
-                name="email"
-                type="email"
-                value=""
-                placeholder="Su dirección de correo electrónico"
-                aria-labelledby="block-newsletter-label"
-              >
-            </div>
-            <input type="hidden" name="action" value="0">
-            <div class="clearfix"></div>
-          </div>
-          <div class="col-xs-12">
-                                                          <div id="gdpr_consent" class="gdpr_module_17">
-    <span class="custom-checkbox">
-        <label class="psgdpr_consent_message">
-            <input id="psgdpr_consent_checkbox_17" name="psgdpr_consent_checkbox" type="checkbox" value="1" class="psgdpr_consent_checkboxes_17">
-            <span><i class="material-icons rtl-no-flip checkbox-checked psgdpr_consent_icon"></i></span>
-            <span>He leído el <a href="https://capitansiroco.com/aviso-legal">aviso legal</a> y acepto los <a href="https://capitansiroco.com/terminos-y-condiciones-de-uso">términos y condiciones</a>.</span>        </label>
-    </span>
-</div>
-
-<script type="text/javascript">
-    var psgdpr_front_controller = "https://capitansiroco.com/module/psgdpr/FrontAjaxGdpr";
-    psgdpr_front_controller = psgdpr_front_controller.replace(/\amp;/g,'');
-    var psgdpr_id_customer = "0";
-    var psgdpr_customer_token = "da39a3ee5e6b4b0d3255bfef95601890afd80709";
-    var psgdpr_id_guest = "0";
-    var psgdpr_guest_token = "0fa25d415df0fb7af9392c5d88dd80453ad7d2b3";
-
-    document.addEventListener('DOMContentLoaded', function() {
-        let psgdpr_id_module = "17";
-        let parentForm = $('.gdpr_module_' + psgdpr_id_module).closest('form');
-
-        let toggleFormActive = function() {
-            let parentForm = $('.gdpr_module_' + psgdpr_id_module).closest('form');
-            let checkbox = $('#psgdpr_consent_checkbox_' + psgdpr_id_module);
-            let element = $('.gdpr_module_' + psgdpr_id_module);
-            let iLoopLimit = 0;
-
-            // by default forms submit will be disabled, only will enable if agreement checkbox is checked
-            if (element.prop('checked') != true) {
-                element.closest('form').find('[type="submit"]').attr('disabled', 'disabled');
-            }
-            $(document).on("change" ,'.psgdpr_consent_checkboxes_' + psgdpr_id_module, function() {
-                if ($(this).prop('checked') == true) {
-                    $(this).closest('form').find('[type="submit"]').removeAttr('disabled');
-                } else {
-                    $(this).closest('form').find('[type="submit"]').attr('disabled', 'disabled');
-                }
-
-            });
-        }
-
-        // Triggered on page loading
-        toggleFormActive();
-
-        $(document).on('submit', parentForm, function(event) {
-            $.ajax({
-                data: 'POST',
-                url: psgdpr_front_controller,
-                data: {
-                    ajax: true,
-                    action: 'AddLog',
-                    id_customer: psgdpr_id_customer,
-                    customer_token: psgdpr_customer_token,
-                    id_guest: psgdpr_id_guest,
-                    guest_token: psgdpr_guest_token,
-                    id_module: psgdpr_id_module,
-                },
-                error: function (err) {
-                    console.log(err);
-                }
-            });
-        });
-    });
-</script>
-
-
-                        </div>
-        </div>
+                </ul>
       </form>
+    
+    
+    <div id="payment-confirmation">
+      <div class="ps-shown-by-js">
+        <button type="submit" disabled="" class="btn btn-primary center-block">
+          Finalizar pedido ahora
+        </button>
+            </div>
+      <div class="ps-hidden-by-js" style="display: none;">
+            </div>
     </div>
-  </div>
-</div>
-
-  <div class="block-social col-lg-1 col-md-12 col-sm-12">
-    <ul>
-              <li class="facebook"><a href="https://www.facebook.com/capitan.siroco" target="_blank" rel="nofollow">Facebook</a></li>
-              <li class="instagram"><a href="https://www.instagram.com/capitansiroco/" target="_blank" rel="nofollow">Instagram</a></li>
-          </ul>
-  </div>
-
-<script>
+  
     
-    function setcook() {
-        var nazwa = 'cookie_ue';
-        var wartosc = '1';
-        var expire = new Date();
-        expire.setMonth(expire.getMonth() + 12);
-        document.cookie = nazwa + "=" + escape(wartosc) + ";path=/;" + ((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
-    }
-
-    
-        
-
-    
-        
-        function closeUeNotify() {
-                        $('#cookieNotice').animate(
-                    {bottom: '-200px'},
-                    2500, function () {
-                        $('#cookieNotice').hide();
-                    });
-            setcook();
-                    }
-    
-        
-    
-</script>
-<style>
-    
-    .closeFontAwesome:before {
-        content: "\f00d";
-        font-family: "FontAwesome";
-        display: inline-block;
-        font-size: 23px;
-        line-height: 23px;
-        color: #000000;
-        padding-right: 15px;
-        cursor: pointer;
-    }
-
-    .closeButtonNormal {
-         display: block; 
-        text-align: center;
-        padding: 2px 5px;
-        border-radius: 2px;
-        color: #000000;
-        background: #FFFFFF;
-        cursor: pointer;
-    }
-
-    #cookieNotice p {
-        margin: 0px;
-        padding: 0px;
-    }
-
-
-    #cookieNoticeContent {
-        
-                    padding:20px;
-                
-    }
-
-    
-</style>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<div id="cookieNotice" style=" width: 100%; position: fixed; bottom:0px; box-shadow: 0px 0 10px 0 #FFFFFF; background: #000000; z-index: 9999; font-size: 14px; line-height: 1.3em; font-family: arial; left: 0px; text-align:center; color:#FFF; opacity: 0.9 ">
-    <div id="cookieNoticeContent" style="position:relative; margin:auto; width:100%; display:block;">
-        <table style="width:100%;">
-            <tr>
-                        <td style="text-align:center;">
-                <p>Esta tienda utiliza cookies y otras tecnologías para que podamos mejorar su experiencia en nuestros sitios. Puede leer nuestra política de cookies <a href="https://capitansiroco.com/politica-de-cookies">aquí</a></p>
-            </td>
-                            <td style="width:80px; vertical-align:middle; padding-right:20px; text-align:right;">
-                                            <span class="closeButtonNormal" onclick="closeUeNotify()">aceptar</span>
-                                    </td>
-                        </tr>
-            <tr>
-                            </tr>
-        </table>
-    </div>
-</div>
-      
-    </div>
-    <div class="row">
-      
-        
-      
-    </div>
-    <div class="row copy">
-      <div class="col-md-12">
-        <p class="text-sm-center">
-          
-            Capitán Siroco © 2021
-          
-        </p>
+  
+    <div class="modal fade" id="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="js-modal-content"></div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-        
-      </footer>
-
-    </main>
-
-    
-        <script type="text/javascript" src="https://capitansiroco.com/themes/core.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/themes/capitansiroco/assets/js/owl.carousel.min.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/themes/classic/assets/js/theme.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/ps_emailsubscription/views/js/ps_emailsubscription.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/codfee/views/js/codfee17.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/codfee/views/js/codfee16.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/cdc_googletagmanager/views/js/ajaxcart.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/js/jquery/ui/jquery-ui.min.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/ps_imageslider/js/responsiveslides.min.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/ps_imageslider/js/homeslider.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/themes/capitansiroco/modules/ps_searchbar/ps_searchbar.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/modules/ps_shoppingcart/ps_shoppingcart.js" ></script>
-  <script type="text/javascript" src="https://capitansiroco.com/themes/capitansiroco/assets/js/custom.js" ></script>
-
-
+  
+      </div>
+    </section>
+  </html>
